@@ -10,7 +10,7 @@ async function scrape() {
     mkdirSync('data', {recursive: true });
     mkdirSync('assets/tamas', {recursive: true });
     
-    for (let id = 1; id <= 50; id++) {
+    for (let id = 1; id <= 59; id++) {
         const url = `https://tamagotchi-official.com/us/series/uni/character/${id}/`;
         try {
             const { data: html } = await axios.get(url);
