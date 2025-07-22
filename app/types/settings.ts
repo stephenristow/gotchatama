@@ -1,7 +1,8 @@
 export type Theme = 'Light' | 'Dark';
+export type ViewMode = 'list' | 'grid';
 
 export interface Settings {
-    username: String;
     theme: Theme;
-    fontSize: number;
+    viewMode: ViewMode;
+    itemsPerRow: number;
 }

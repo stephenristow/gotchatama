@@ -17,11 +17,10 @@ export default function ChecklistScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Checklist</Text>
       <FlatList
         data={tamas}
         keyExtractor={t => t.id.toString()}
-        numColumns={2}
+        numColumns={4}
         columnWrapperStyle={styles.row}
         contentContainerStyle={styles.listBody}
         renderItem={({ item }) => (

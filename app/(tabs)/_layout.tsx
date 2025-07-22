@@ -29,7 +29,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="Checklist"
         options={{
-          title: 'Checklist',
+          title: 'Uni',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
@@ -51,7 +51,7 @@ export default function TabLayout() {
         name="Settings"
         options={{
           title: 'Settings',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="gear" color={color} />,
         }}
       />
     </Tabs>

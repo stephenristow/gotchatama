@@ -1,14 +1,49 @@
-import { StyleSheet } from 'react-native';
-
+import { StyleSheet, View, Text, Switch, Button, TextInput, Platform, } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+import { useSettingsStorage } from '../hooks/useSettingsStorage.ts';
 import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
+import { Theme, ViewMode } from '../types/settings.ts';
 
 export default function SettingsScreen() {
+  const { settings, save } = useSettingsStorage();
+
+  const update = (partial: Parial<typeof settings>) =>
+    save({ ...settings, ...partial });
+
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Settings</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/Settings.tsx" />
+      <View style={styles.row}>
+        <Text style={styles.label}>Dark Mode</Text>
+        <Switch
+          value={settings.theme === 'dark'}
+          onValueChange={v => update({ theme: v ? 'dark' : 'light' })}
+        />
+      </View>
+      <View style={styles.row}>
+        <Text style={styles.label}>View Mode</Text>
+        <Picker
+          selectedValue={settings.viewMode}
+          style={styles.picker}
+          onValueChange={(v: ViewMode) => update({ viewMode: v })}
+        >
+          <Picker.Item label="Grid" value="grid" />
+          <Picker.Item label="List" value="list" />
+        </Picker>
+      </View>
+      {settings.viewMode === 'grid' && (
+        <View style={styles.row}>
+          <Text style={styles.label}>Columns</Text>
+          <Picker
+            selectedValue={settings.itemsPerRow}
+            style={styles.picker}
+            onValueChange={(v: number) => update({ itemsPerRow: v })}
+          >
+            {[1, 2, 3].map(n => (
+              <Picker.Item key={n} label={String(n)} value={n} />
+            ))}
+          </Picker>
+        </View>
+      )}
     </View>
   );
 }
