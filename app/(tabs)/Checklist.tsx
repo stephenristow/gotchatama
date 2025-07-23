@@ -20,7 +20,7 @@ export default function ChecklistScreen() {
       <FlatList
         data={tamas}
         keyExtractor={t => t.id.toString()}
-        numColumns={4}
+        numColumns={2}
         columnWrapperStyle={styles.row}
         contentContainerStyle={styles.listBody}
         renderItem={({ item }) => (

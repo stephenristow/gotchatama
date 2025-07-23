@@ -1,12 +1,13 @@
 import React from 'react';
-import { View, Text, Switch, StyleSheet, Image, Dimensions, Pressable } from 'react-native';
+import { View, Switch, StyleSheet, Image, Dimensions, Pressable } from 'react-native';
+import { Text } from '@/components/Themed';
 import Checkbox from 'expo-checkbox';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tama } from '../app/hooks/useTamaStorage';
 
 const { width } = Dimensions.get('window');
-const CARD_MARGIN = 15;
-const CARD_WIDTH = (width - CARD_MARGIN * 30) / 4;
+const CARD_MARGIN = 4;
+const CARD_WIDTH = (width - CARD_MARGIN * 2) / 2;
 
 interface Props {
     tama: Tama;
@@ -51,9 +52,16 @@ const styles = StyleSheet.create({
         width: CARD_WIDTH,
         margin: CARD_MARGIN,
     },
+    wrapper: {
+      flex: 1,
+      aspectRatio: 0.85,
+      margin: 8,
+    },
     card: {
         backgroundColor: '#fff',
-        borderRadius: 8,
+        borderRadius: 32,
+        borderColor: '#a0a0a0',
+        borderWidth: 4, 
         overflow: 'hidden',
 
         shadowColor: '#000',
@@ -74,6 +82,8 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
       alignItems: 'center',
       padding: 8,
+      paddingBottom: 8,
+      paddingHorizontal: 16,
     },
     checkbox: {
       marginRight: 8,
@@ -81,7 +91,7 @@ const styles = StyleSheet.create({
     name: { 
         flex: 1,
         alignItems: 'center',
-        fontSize: 14,
+        fontSize: 16,
         marginRight: 8, 
     },
 });

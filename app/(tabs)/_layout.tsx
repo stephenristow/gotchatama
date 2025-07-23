@@ -1,4 +1,8 @@
 import React from 'react';
+import { Text as RNText } from 'react-native';
+import { useFonts } from 'expo-font';
+import AppLoading from 'expo-app-loading'; 
+
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
 import { Pressable } from 'react-native';
@@ -16,14 +20,25 @@ function TabBarIcon(props: {
 }
 
 export default function TabLayout() {
+  const [fontsLoaded] = useFonts({
+    ArialRounded: require('../../assets/fonts/arial-rounded-mt-regular.ttf')
+  });
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
+  RNText.defaultProps = RNText.defaultProps || {};
+  RNText.defaultProps.style = {
+    ...(RNText.defaultProps.style || {}),
+    fontFamily: 'ArialRounded', 
+  };
+
   const colorScheme = useColorScheme();
 
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        // Disable the static render of the header on web
-        // to prevent a hydration error in React Navigation v6.
         headerShown: useClientOnlyValue(false, true),
       }}>
       <Tabs.Screen

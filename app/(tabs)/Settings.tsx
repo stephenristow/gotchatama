@@ -1,4 +1,5 @@
-import { StyleSheet, View, Text, Switch, Button, TextInput, Platform, } from 'react-native';
+import { StyleSheet, View, Switch, Button, TextInput, Platform, } from 'react-native';
+import { Text } from '@/components/Themed';
 import { Picker } from '@react-native-picker/picker';
 import { useSettingsStorage } from '../hooks/useSettingsStorage.ts';
 import EditScreenInfo from '@/components/EditScreenInfo';
