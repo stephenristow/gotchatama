@@ -1,0 +1,587 @@
+[
+  {
+    "name": "Yooyutchi",
+    "steps": [
+      "50% chance of hatching"
+    ]
+  },
+  {
+    "name": "Niinitchi",
+    "steps": [
+      "50% chance of hatching"
+    ]
+  },
+  {
+    "name": "Welcotchi",
+    "steps": [
+      "Happiness above 10 points"
+    ]
+  },
+  {
+    "name": "Mitumarutchi",
+    "steps": [
+      "Happiness below 10 points"
+    ]
+  },
+  {
+    "name": "Kuriritchi",
+    "steps": [
+      "Happiness between 15 to 20 points",
+      "Or do DIY crafting at least 10 times"
+    ]
+  },
+  {
+    "name": "Gunchitchi",
+    "steps": [
+      "Happiness between 6 to 14 points",
+      "Or feed snacks at least 40 times"
+    ]
+  },
+  {
+    "name": "Curltchi",
+    "steps": [
+      "Happiness between 0 to 5 points",
+      "Or get a perfect score in at least 15 games (Tama Arcade and DL Area games will work)"
+    ]
+  },
+  {
+    "name": "Mametchi",
+    "steps": [
+      "0 care mistakes",
+      "Or with 1-3 care mistakes, go on a Tama Walk at least 3 times"
+    ]
+  },
+  {
+    "name": "Weeptchi",
+    "steps": [
+      "1-3 care mistakes"
+    ]
+  },
+  {
+    "name": "Simagurutchi",
+    "steps": [
+      "4+ care mistakes"
+    ]
+  },
+  {
+    "name": "Kuchipatchi",
+    "steps": [
+      "0-1 care mistakes",
+      "Or with 2-5 care mistakes, order from Tama Delivery at least 10 times"
+    ]
+  },
+  {
+    "name": "Shykutchi",
+    "steps": [
+      "2-5 care mistakes"
+    ]
+  },
+  {
+    "name": "Bigsmile",
+    "steps": [
+      "6+ care mistakes"
+    ]
+  },
+  {
+    "name": "Kikitchi",
+    "steps": [
+      "0-1 care mistakes",
+      "Or with 2-5 care mistakes, get a perfect score in at least 20 games at Tama Arcade"
+    ]
+  },
+  {
+    "name": "Unimarutchi",
+    "steps": [
+      "2-5 care mistakes"
+    ]
+  },
+  {
+    "name": "Gozarutchi",
+    "steps": [
+      "6+ care mistakes"
+    ]
+  },
+  {
+    "name": "Hypertchi",
+    "steps": [
+      "Generation must be a multiple of 5",
+      "Must have been born from a marriage on the Tamaverse",
+      "Go on at least 3 Tama Travel trips in the Tamaverse"
+    ]
+  },
+  {
+    "name": "Simasimatchi",
+    "steps": [
+      "Must have been born from a marriage between two Uni devices",
+      "Make at least one DIY"
+    ]
+  },
+  {
+    "name": "Neliatchi",
+    "steps": [
+      "0 care mistakes",
+      "Or with 1-3 care mistakes, go on a Tama Walk at least 3 times"
+    ]
+  },
+  {
+    "name": "Milktchi",
+    "steps": [
+      "1-3 care mistakes"
+    ]
+  },
+  {
+    "name": "Momotchi",
+    "steps": [
+      "4+ care mistakes"
+    ]
+  },
+  {
+    "name": "Woopatchi",
+    "steps": [
+      "0-1 care mistakes",
+      "Or with 2-5 care mistakes, order from Tama Delivery at least 10 times"
+    ]
+  },
+  {
+    "name": "Memetchi",
+    "steps": [
+      "2-5 care mistakes"
+    ]
+  },
+  {
+    "name": "Picochutchi",
+    "steps": [
+      "6+ care mistakes"
+    ]
+  },
+  {
+    "name": "Mimitchi",
+    "steps": [
+      "0-1 care mistakes",
+      "Or with 2-5 care mistakes, get a perfect score in at least 20 games at Tama Arcade"
+    ]
+  },
+  {
+    "name": "Unimarutchi",
+    "steps": [
+      "2-5 care mistakes"
+    ]
+  },
+  {
+    "name": "Sebiretchi",
+    "steps": [
+      "6+ care mistakes"
+    ]
+  },
+  {
+    "name": "Bubbletchi",
+    "steps": [
+      "Generation must be a multiple of 5",
+      "Must have been born from a marriage on the Tamaverse",
+      "Purchase at least three Tama Fashion outfits in the Tamaverse"
+    ]
+  },
+  {
+    "name": "Yattatchi",
+    "steps": [
+      "Must have been born from a marriage between two Uni devices",
+      "Make at least one DIY"
+    ]
+  },
+  {
+    "name": "Hotcaketchi",
+    "steps": [
+      "Play with Frying Pan item the most"
+    ]
+  },
+  {
+    "name": "Ichigotchi",
+    "steps": [
+      "Feed Strawberry Rice Cake snack the most"
+    ]
+  },
+  {
+    "name": "Ringotchi",
+    "steps": [
+      "Feed Apple Cake snack the most"
+    ]
+  },
+  {
+    "name": "Patitchi",
+    "steps": [
+      "Feed Patissier Cake snack the most"
+    ]
+  },
+  {
+    "name": "Cornetchi",
+    "steps": [
+      "Feed Ice Cream Sandwich meal the most"
+    ]
+  },
+  {
+    "name": "Tanghulutchi",
+    "steps": [
+      "Feed Fruit Candy snack the most"
+    ]
+  },
+  {
+    "name": "Chekeratchi",
+    "steps": [
+      "Play with DJ Booth item the most"
+    ]
+  },
+  {
+    "name": "Drumcrubitchi",
+    "steps": [
+      "Feed Drum Popcorn snack the most"
+    ]
+  },
+  {
+    "name": "Lovelitchi",
+    "steps": [
+      "Feed Lovely Frappe snack the most"
+    ]
+  },
+  {
+    "name": "Melodytchi",
+    "steps": [
+      "Feed ♪ Sachertorte snack the most"
+    ]
+  },
+  {
+    "name": "Pianitchi",
+    "steps": [
+      "Play with Smart Piano Pad item the most"
+    ]
+  },
+  {
+    "name": "Rhythristchi",
+    "steps": [
+      "Feed Rhythm Noodles meal the most"
+    ]
+  },
+  {
+    "name": "Spacytchi",
+    "steps": [
+      "Feed Spacy Curry meal the most"
+    ]
+  },
+  {
+    "name": "Mystartchi",
+    "steps": [
+      "Feed Top Hat Éclair snack the most"
+    ]
+  },
+  {
+    "name": "Boots Brothers",
+    "steps": [
+      "Feed Boots-Glass Tea snack the most"
+    ]
+  },
+  {
+    "name": "Moriritchi",
+    "steps": [
+      "Feed Tamamori Noodles meal the most"
+    ]
+  },
+  {
+    "name": "Coffretchi",
+    "steps": [
+      "Feed Puff Macaron snack the most"
+    ]
+  },
+  {
+    "name": "Dresstchi",
+    "steps": [
+      "Feed Dress Salad meal the most"
+    ]
+  },
+  {
+    "name": "Mame Kitty",
+    "steps": [
+      "Use Ribbon Box item the most"
+    ]
+  },
+  {
+    "name": "Patchi Purin",
+    "steps": [
+      "Use Purin Bag item the most"
+    ]
+  },
+  {
+    "name": "Usahana Memetchi",
+    "steps": [
+      "Feed Flower Sherbert snack the most"
+    ]
+  },
+  {
+    "name": "Cinnamon Moriritchi",
+    "steps": [
+      "Play with Cinnamon Cup item the most"
+    ]
+  },
+  {
+    "name": "Kuromi Melodytchi",
+    "steps": [
+      "Use Kuromi Diary item the most"
+    ]
+  },
+  {
+    "name": "Hangyodon Sebiretchi",
+    "steps": [
+      "Feed Hangyodon Bun meal the most"
+    ]
+  },
+  {
+    "name": "MyMelo Lovelitchi",
+    "steps": [
+      "Feed Melody Strawberry snack the most"
+    ]
+  },
+  {
+    "name": "Pochacco Mimitchi",
+    "steps": [
+      "Feed Pochacco Rice Ball meal the most"
+    ]
+  },
+  {
+    "name": "Cogimyun Woopatchi",
+    "steps": [
+      "Feed Cotton Cogimyun snack the most"
+    ]
+  },
+  {
+    "name": "Little Unimarutchi",
+    "steps": [
+      "Feed Star Pancake snack the most"
+    ]
+  },
+  {
+    "name": "Mame-El",
+    "steps": [
+      "Feed Bell Brioche meal the most"
+    ]
+  },
+  {
+    "name": "Pegasustchi",
+    "steps": [
+      "Feed Pegasus Cotton Candy snack the most"
+    ]
+  },
+  {
+    "name": "Flowerdite",
+    "steps": [
+      "Feed Rain Candy snack the most"
+    ]
+  },
+  {
+    "name": "Sebirecupid",
+    "steps": [
+      "Feed Heart Omelette meal the most"
+    ]
+  },
+  {
+    "name": "Yumemittie",
+    "steps": [
+      "Feed Ribbon Bread meal the most"
+    ]
+  },
+  {
+    "name": "Unimarucorn",
+    "steps": [
+      "Feed Unicorn Parfait snack the most"
+    ]
+  },
+  {
+    "name": "Mamegon",
+    "steps": [
+      "Feed Monster Sandwich meal the most"
+    ]
+  },
+  {
+    "name": "Slimypatchi",
+    "steps": [
+      "Feed Slimy Jelly snack the most"
+    ]
+  },
+  {
+    "name": "Meduupa",
+    "steps": [
+      "Feed Snake Churros snack the most"
+    ]
+  },
+  {
+    "name": "Gobpyon",
+    "steps": [
+      "Feed Goblin Bun meal the most"
+    ]
+  },
+  {
+    "name": "Giveuptchi",
+    "steps": [
+      "Feed Eye Ball Jelly snack the most"
+    ]
+  },
+  {
+    "name": "Onimarutchi",
+    "steps": [
+      "Feed Ogre Rice Ball meal the most"
+    ]
+  },
+  {
+    "name": "Mamecchio",
+    "steps": [
+      "Feed Whale Jelly snack the most"
+    ]
+  },
+  {
+    "name": "Piggypatchis",
+    "steps": [
+      "Use Piggy Bank item the most"
+    ]
+  },
+  {
+    "name": "Kikigoku",
+    "steps": [
+      "Use Flying Cloud item the most"
+    ]
+  },
+  {
+    "name": "Pyonderella",
+    "steps": [
+      "Feed Pumpkin Pudding snack the most"
+    ]
+  },
+  {
+    "name": "Milkyukihime",
+    "steps": [
+      "Feed Caramelized Apple snack the most"
+    ]
+  },
+  {
+    "name": "Neliakaguya",
+    "steps": [
+      "Feed Kaguya Sushi meal the most"
+    ]
+  },
+  {
+    "name": "Peanutskun",
+    "steps": [
+      "Feed Peanuts-kun Jellies snack the most"
+    ]
+  },
+  {
+    "name": "Chancho",
+    "steps": [
+      "Feed Soda Tasters snack the most"
+    ]
+  },
+  {
+    "name": "Peanutsoyaji",
+    "steps": [
+      "Use Peanuts-kun Sauna item the most"
+    ]
+  },
+  {
+    "name": "Bnn-hairtchi",
+    "steps": [
+      "Feed Ramune snack the most"
+    ]
+  },
+  {
+    "name": "Tanuki Ninja",
+    "steps": [
+      "Feed Poko Latte snack the most"
+    ]
+  },
+  {
+    "name": "Ponpoko",
+    "steps": [
+      "Feed Endless Takoyaki meal the most"
+    ]
+  },
+  {
+    "name": "Gachikoi-P",
+    "steps": [
+      "Feed Beetle Parfait snack the most"
+    ]
+  },
+  {
+    "name": "Kuromametchi",
+    "steps": [
+      "Feed Soccer Rice Ball meal the most"
+    ]
+  },
+  {
+    "name": "Octpasketchi",
+    "steps": [
+      "Feed Basketball Cookie snack the most"
+    ]
+  },
+  {
+    "name": "Tapepentchi",
+    "steps": [
+      "Feed Tape Cake snack the most"
+    ]
+  },
+  {
+    "name": "Yumemitchi",
+    "steps": [
+      "Feed Yumecantchi Bento meal the most"
+    ]
+  },
+  {
+    "name": "Kiraritchi",
+    "steps": [
+      "Use Yume Kira Bag item the most"
+    ]
+  },
+  {
+    "name": "Miraitchi",
+    "steps": [
+      "Use Knock Tap item the most"
+    ]
+  },
+  {
+    "name": "Clulutchi",
+    "steps": [
+      "Use Pocket Designer item the most"
+    ]
+  },
+  {
+    "name": "Opanchu Usagi",
+    "steps": [
+      "Use Personal Car item the most"
+    ]
+  },
+  {
+    "name": "Npocham",
+    "steps": [
+      "Use Macaron item the most"
+    ]
+  },
+  {
+    "name": "Kimimaro",
+    "steps": [
+      "Feed Cookie snack the most"
+    ]
+  },
+  {
+    "name": "Kawaisouni Mametchi",
+    "steps": [
+      "Feed Fried Rice meal the most"
+    ]
+  },
+  {
+    "name": "Kawaisouni Kuchipatchi",
+    "steps": [
+      "Feed Flan snack the most"
+    ]
+  },
+  {
+    "name": "Kawaisouni Mimitchi",
+    "steps": [
+      "Feed Yakisoba meal the most"
+    ]
+  }
+]

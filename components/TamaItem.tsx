@@ -25,8 +25,10 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
 
     return (
       <View style={styles.wrapper}>
-        <View style={[styles.card, tama.acquired ? null : styles.disabled]}>
-          <Image source={{ uri }} style={styles.image} />
+        <View style={styles.card}>
+          <View style={[styles.imageContainer, tama.acquired ? null : styles.disabled]}>
+            <Image source={{ uri }} style={styles.image} />
+          </View>
           
           <View style={styles.bottomRow}>
             <Checkbox 
@@ -58,10 +60,11 @@ const styles = StyleSheet.create({
       margin: 8,
     },
     card: {
+        flex: 1,
         backgroundColor: '#fff',
         borderRadius: 32,
         borderColor: '#a0a0a0',
-        borderWidth: 4, 
+        borderWidth: 2, 
         overflow: 'hidden',
 
         shadowColor: '#000',
@@ -73,16 +76,21 @@ const styles = StyleSheet.create({
     disabled: {
       opacity: 0.4,
     },
+    imageContainer: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
     image: {
-        width: '100%',
+        width: '80%',
+        height: '80%',
         aspectRatio: 1,
         resizeMode: 'cover',
     },
     bottomRow: {
       flexDirection: 'row',
       alignItems: 'center',
-      padding: 8,
-      paddingBottom: 8,
+      paddingBottom: 16,
       paddingHorizontal: 16,
     },
     checkbox: {
@@ -90,8 +98,9 @@ const styles = StyleSheet.create({
     },
     name: { 
         flex: 1,
-        alignItems: 'center',
+        textAlign: 'center',
         fontSize: 16,
+        fontColor: '#a0a0a0',
         marginRight: 8, 
     },
 });
