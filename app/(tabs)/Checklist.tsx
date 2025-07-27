@@ -1,8 +1,9 @@
-import { StyleSheet, FlatList, Modal, Text as RNText, Pressable, Button, ScrollView } from 'react-native';
+import { StyleSheet, FlatList, Modal, Text as RNText, Pressable, Button, Switch, ScrollView } from 'react-native';
 import React, { useState } from 'react';
 import { useTamaStorage } from '../hooks/useTamaStorage';
 import TamaItem from '@/components/TamaItem';
 import unlockSteps from '../../data/unlockSteps.json';
+import { useFilterStorage } from '../hooks/useFilterStorage.ts';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
@@ -18,6 +19,9 @@ const unlockMap: Record<string, string[]> = (unlockSteps as Array<{
 export default function ChecklistScreen() {
   const { tamas, save } = useTamaStorage();
   const [selectedTama, setSelectedTama] = useState<Tama | null>(null);
+  const { filters, save: saveFilters } = useFilterStorage();
+  const [ showFilterModal, setShowFilterModal ] = useState(false);
+  const BASE_GAME_MAX_ID = 22;
 
   const toggle = (id: number) => {
     const updated = tamas.map(t =>
@@ -26,10 +30,40 @@ export default function ChecklistScreen() {
     save(updated);
   };
 
+  const unlockMap = React.useMemo(
+    () => 
+      unlockSteps.reduce<Record<string,string[]>>((map, u) => {
+        map[u.name] = u.steps;
+        return map;
+      }, {}),
+    []
+  );
+
+
+  const visibleTamas = tamas.filter(t => {
+    if (!filters.showAcquired && t.acquired) return false;
+    if (!filters.showUnacquired && !t.acquired) return false;
+    
+    const isBase = t.id <= BASE_GAME_MAX_ID;
+    if (filters.onlyBaseGame && !isBase) return false;
+    if (filters.onlyExpansions && isBase) return false;
+
+    // if (filters.expansions.length > 0) {
+    //   const expansionName = getExpansionNameForTama(t.id);
+    //   if (!filters.expansions.includes(expansionName)) return false;
+    // }
+
+    return true;
+  })
+
   return (
     <View style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.title}>Tama Checklist</Text>
+        <Button title="Filters" onPress={() => setShowFilterModal(true)} />
+      </View>
       <FlatList
-        data={tamas}
+        data={visibleTamas}
         keyExtractor={t => t.id.toString()}
         numColumns={2}
         columnWrapperStyle={styles.row}
@@ -43,6 +77,29 @@ export default function ChecklistScreen() {
         )}
       />
 
+      <Modal visible={showFilterModal}>
+        <View style={styles.modalContent}>
+          <Text>Show Acquired</Text>
+          <Switch value={filters.showAcquired}
+          onValueChange={v => saveFilters({ ...filters, showAcquired: v})}
+          />
+          <Text>Show Unacquired</Text>
+          <Switch value={filters.showUnacquired}
+          onValueChange={v => saveFilters({ ...filters, showUnacquired: v})}
+          />
+          <Text>Base Game Only</Text>
+          <Switch value={filters.onlyBaseGame}
+          onValueChange={v => saveFilters({ ...filters, onlyBaseGame: v})}
+          />
+          <Text>Expansions Only</Text>
+          <Switch value={filters.onlyExpansions}
+          onValueChange={v => saveFilters({ ...filters, onlyExpansions: v})}
+          />
+          
+          <Button title="Done" onPress={() => setShowFilterModal(false)} />
+        </View>
+      </Modal>
+
       <Modal
         visible={!!selectedTama}
         animationType="slide"
@@ -55,11 +112,11 @@ export default function ChecklistScreen() {
               {selectedTama?.name}
             </Text>
             <ScrollView style={styles.stepsList}>
-              {(selectedTama && STEPS[selectedTama.id] || []).map((step, i) => (
+              {selectedTama ? (unlockMap[selectedTama.name] || []).map((step, i) => (
                 <View key={i} style={styles.stepRow}>
                   <Text>{`\u2022 ${step}`}</Text>
                 </View>
-              ))}
+              )) : null}
             </ScrollView>
             <Pressable
               style={styles.closeButton}
