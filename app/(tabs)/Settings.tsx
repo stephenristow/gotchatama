@@ -1,9 +1,10 @@
-import { StyleSheet, View, Switch, Button, TextInput, Platform, } from 'react-native';
+import { StyleSheet, View, Button, TextInput, Platform, } from 'react-native';
 import { Text } from '@/components/Themed';
 import { Picker } from '@react-native-picker/picker';
 import { useSettingsStorage } from '../hooks/useSettingsStorage.ts';
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Theme, ViewMode } from '../types/settings.ts';
+import CustomSwitch from '@/components/CustomSwitch';
 
 export default function SettingsScreen() {
   const { settings, save } = useSettingsStorage();
@@ -15,7 +16,7 @@ export default function SettingsScreen() {
     <View style={styles.container}>
       <View style={styles.row}>
         <Text style={styles.label}>Dark Mode</Text>
-        <Switch
+        <CustomSwitch
           value={settings.theme === 'dark'}
           onValueChange={v => update({ theme: v ? 'dark' : 'light' })}
         />

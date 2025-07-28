@@ -21,17 +21,18 @@ function TabBarIcon(props: {
 
 export default function TabLayout() {
   const [fontsLoaded] = useFonts({
-    ArialRounded: require('../../assets/fonts/arial-rounded-mt-regular.ttf')
+    ArialRounded: require('../../assets/fonts/arial-rounded-mt-regular.ttf'),
+    TamaConnect: require('../../assets/fonts/tamaconnecttype.ttf')
   });
   if (!fontsLoaded) {
     return <AppLoading />;
   }
 
-  RNText.defaultProps = RNText.defaultProps || {};
-  RNText.defaultProps.style = {
-    ...(RNText.defaultProps.style || {}),
-    fontFamily: 'ArialRounded', 
-  };
+  // RNText.defaultProps = RNText.defaultProps || {};
+  // RNText.defaultProps.style = {
+  //   ...(RNText.defaultProps.style || {}),
+  //   style: [{ fontFamily: 'ArialRounded' }, ...(RNText.defaultProps.style ?? [])], 
+  // };
 
   const colorScheme = useColorScheme();
 
@@ -40,7 +41,30 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: useClientOnlyValue(false, true),
-      }}>
+
+        headerStyle: {
+          backgroundColor: Colors[colorScheme].background,
+          
+          borderBottomWidth: 1,
+          borderBottomColor: Colors[colorScheme].border,
+          
+          shadowColor: '#000',
+          shadowOffset: { width: 0, height: 2 },
+          shadowOpacity: 0.1,
+          shadowRadius: 4,
+
+          elevation: 4,
+        },
+
+        headerTitleStyle: {
+          fontWeight: '600',
+        },
+
+        headerTitleAlign: 'center',
+
+        tabBarActiveTintColor: Colors[colorScheme].tint,
+      }}
+    >
       <Tabs.Screen
         name="Checklist"
         options={{

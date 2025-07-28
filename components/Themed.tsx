@@ -40,7 +40,7 @@ export function Text(props: TextProps) {
   return (
     <DefaultText 
       style={[
-        { fontFamily: 'ArialRounded' },
+        { fontFamily: 'TamaConnect' },
         { color }, 
         style]}
         {...otherProps} 
