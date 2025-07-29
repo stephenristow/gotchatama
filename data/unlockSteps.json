@@ -46,64 +46,84 @@
   },
   {
     "name": "Mametchi",
+    "requiredTeen": "Kuriritchi",
     "steps": [
+      "From Kuriritchi",
       "0 care mistakes",
       "Or with 1-3 care mistakes, go on a Tama Walk at least 3 times"
     ]
   },
   {
     "name": "Weeptchi",
+    "requiredTeen": "Kuriritchi",
     "steps": [
+      "From Kuriritchi",
       "1-3 care mistakes"
     ]
   },
   {
     "name": "Simagurutchi",
+    "requiredTeen": "Kuriritchi",
     "steps": [
+      "From Kuriritchi",
       "4+ care mistakes"
     ]
   },
   {
     "name": "Kuchipatchi",
+    "requiredTeen": "Gunchitchi",
     "steps": [
+      "From Gunchitchi",
       "0-1 care mistakes",
       "Or with 2-5 care mistakes, order from Tama Delivery at least 10 times"
     ]
   },
   {
     "name": "Shykutchi",
+    "requiredTeen": "Gunchitchi",
     "steps": [
+      "From Gunchitchi",
       "2-5 care mistakes"
     ]
   },
   {
     "name": "Bigsmile",
+    "requiredTeen": "Gunchitchi",
     "steps": [
+      "From Gunchitchi",
       "6+ care mistakes"
     ]
   },
   {
     "name": "Kikitchi",
+    "requiredTeen": "Curltchi",
     "steps": [
+      "From Curltchi",
       "0-1 care mistakes",
       "Or with 2-5 care mistakes, get a perfect score in at least 20 games at Tama Arcade"
     ]
   },
   {
     "name": "Unimarutchi",
+    "requiredTeen": "Curltchi",
     "steps": [
+      "From Curltchi",
       "2-5 care mistakes"
     ]
   },
   {
     "name": "Gozarutchi",
+    "requiredTeen": "Curltchi",
     "steps": [
+      "From Curltchi",
       "6+ care mistakes"
     ]
   },
   {
     "name": "Hypertchi",
+    "requiredTeen": "From any teen",
     "steps": [
+      "From any teen",
       "Generation must be a multiple of 5",
       "Must have been born from a marriage on the Tamaverse",
       "Go on at least 3 Tama Travel trips in the Tamaverse"
@@ -111,71 +131,93 @@
   },
   {
     "name": "Simasimatchi",
+    "requiredTeen": "From any teen",
     "steps": [
+      "From any teen",
       "Must have been born from a marriage between two Uni devices",
       "Make at least one DIY"
     ]
   },
   {
     "name": "Neliatchi",
+    "requiredTeen": "Labilatchi",
     "steps": [
+      "From Labilatchi",
       "0 care mistakes",
       "Or with 1-3 care mistakes, go on a Tama Walk at least 3 times"
     ]
   },
   {
     "name": "Milktchi",
+    "requiredTeen": "Labilatchi",
     "steps": [
+      "From Labilatchi",
       "1-3 care mistakes"
     ]
   },
   {
     "name": "Momotchi",
+    "requiredTeen": "Labilatchi",
     "steps": [
+      "From Labilatchi",
       "4+ care mistakes"
     ]
   },
   {
     "name": "Woopatchi",
+    "requiredTeen": "Teftetchi",
     "steps": [
+      "From Teftetchi",
       "0-1 care mistakes",
       "Or with 2-5 care mistakes, order from Tama Delivery at least 10 times"
     ]
   },
   {
     "name": "Memetchi",
+    "requiredTeen": "Teftetchi",
     "steps": [
+      "From Teftetchi",
       "2-5 care mistakes"
     ]
   },
   {
     "name": "Picochutchi",
+    "requiredTeen": "Teftetchi",
     "steps": [
+      "From Teftetchi",
       "6+ care mistakes"
     ]
   },
   {
     "name": "Mimitchi",
+    "requiredTeen": "Tustustchi",
     "steps": [
+      "From Tustustchi",
       "0-1 care mistakes",
       "Or with 2-5 care mistakes, get a perfect score in at least 20 games at Tama Arcade"
     ]
   },
   {
     "name": "Unimarutchi",
+    "requiredTeen": "Tustustchi",
     "steps": [
+      "From Tustustchi",
       "2-5 care mistakes"
     ]
   },
   {
     "name": "Sebiretchi",
+    "requiredTeen": "Tustustchi",
     "steps": [
+      "From Tustustchi",
       "6+ care mistakes"
     ]
   },
   {
     "name": "Bubbletchi",
+    "requiredTeen": "From any teen",
     "steps": [
+      "From any teen",
       "Generation must be a multiple of 5",
       "Must have been born from a marriage on the Tamaverse",
       "Purchase at least three Tama Fashion outfits in the Tamaverse"
@@ -183,7 +225,9 @@
   },
   {
     "name": "Yattatchi",
+    "requiredTeen": "From any teen",
     "steps": [
+      "From any teen",
       "Must have been born from a marriage between two Uni devices",
       "Make at least one DIY"
     ]

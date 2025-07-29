@@ -1,4 +1,4 @@
-import { StyleSheet, FlatList, Modal, Text as RNText, Pressable, ScrollView, TextInput } from 'react-native';
+import { Dimensions, StyleSheet, FlatList, Modal, Text as RNText, Pressable, ScrollView, TextInput } from 'react-native';
 import React, { useState } from 'react';
 import { useTamaStorage } from '../hooks/useTamaStorage';
 import TamaItem from '@/components/TamaItem';
@@ -6,7 +6,7 @@ import unlockSteps from '../../data/unlockSteps.json';
 import { useFilterStorage } from '../hooks/useFilterStorage.ts';
 import CustomButton from '@/components/CustomButton';
 import CustomSwitch from '@/components/CustomSwitch';
-
+import { Expansion } from '../types/expansion.ts';
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
 
@@ -17,6 +17,8 @@ const unlockMap: Record<string, string[]> = (unlockSteps as Array<{
   map[u.name] = u.steps;
   return map;
 }, {});
+
+const CARD_MARGIN = 8;
 
 export default function ChecklistScreen() {
   const { tamas, save } = useTamaStorage();
@@ -42,29 +44,44 @@ export default function ChecklistScreen() {
     []
   );
 
-
+  
+  console.log('FILTER STATE →', filters)
+  console.log(
+    'SERIES IN DATA →',
+    Array.from(new Set(tamas.map(t => t.expansion)))
+  )
   const visibleTamas = tamas.filter(t => 
     t.name.toLowerCase().includes(searchQuery.trim().toLowerCase())
     ).filter(t => {
       if (!filters.showAcquired && t.acquired) return false;
-      if (!filters.showUnacquired && !t.acquired) return false;
+      if (!filters.showUnacquired && !t.acquired) return false
     
-      const isBase = t.id <= BASE_GAME_MAX_ID;
-      if (filters.onlyBaseGame && !isBase) return false;
-      if (filters.onlyExpansions && isBase) return false;
+    if (
+      filters.expansions.length > 0 &&
+        !filters.expansions.includes(t.expansion)
+    ) {
+      return false
+    }
 
-    // if (filters.expansions.length > 0) {
-    //   const expansionName = getExpansionNameForTama(t.id);
-    //   if (!filters.expansions.includes(expansionName)) return false;
-    // }
-
-      return true;
+    return true
     });
 
   const toggleAcquire = (id: number) =>
     save(tamas.map(t => t.id === id ? { ...t, acquired: !t.acquired } : t));
 
-  const chips = [
+  const expansionChips = Object.values(Expansion).map(exp => ({
+    key: exp,
+    label: exp,
+    active: filters.expansions.includes(exp as Expansion),
+    onPress: () => {
+      const next = filters.expansions.includes(exp)
+      ? filters.expansions.filter(e => e !== exp)
+      : [...filters.expansions, exp]
+      saveFilters({ ...filters, expansions: next})
+    },
+  }))
+
+  const staticChips = [
     {
       key: 'acquired',
       label: 'Gotcha @',
@@ -76,20 +93,10 @@ export default function ChecklistScreen() {
       label: 'Notcha \\',
       active: filters.showUnacquired,
       onPress: () => saveFilters({ ...filters, showUnacquired: !filters.showUnacquired })
-    },
-    {
-      key: 'base',
-      label: 'Base Game',
-      active: filters.onlyBaseGame,
-      onPress: () => saveFilters({ ...filters, onlyBaseGame: !filters.onlyBaseGame, onlyExpansions: false })
-    },
-    {
-      key: 'expansions',
-      label: 'Expansions',
-      active: filters.onlyExpansions,
-      onPress: () => saveFilters({ ...filters, onlyExpansions: !filters.onlyExpansions, onlyBaseGame: false })
     }
   ];
+
+  const chips = [...staticChips, ...expansionChips]
 
   return (
     <View style={styles.container}>
@@ -229,11 +236,11 @@ const styles = StyleSheet.create({
     color: '#444',
   },
   listBody: {
-    paddingHorizontal: 8,
+    paddingHorizontal: CARD_MARGIN,
     paddingVertical: 16,
   },
   row: {
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
   },
   title: {
     fontSize: 20,
@@ -270,6 +277,7 @@ const styles = StyleSheet.create({
   },
   emptyContainer: {
     flex: 1,
+    backgroundColor: '#f7f7f7',
     paddingTop: 60,
     alignItems: 'center',
   },

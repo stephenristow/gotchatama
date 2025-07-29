@@ -1,297 +1,602 @@
 [
   {
     "id": 1,
-    "name": "Mametchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/01/vmvwFIfcQhNWer4p/まめっち_書き出し正方形.png"
+    "name": "Yooyutchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/1.png"
   },
   {
     "id": 2,
-    "name": "Kuchipatchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/Grs0icuCW5ffxTAh/くちぱっち_書き出し正方形.png"
+    "name": "Niinitchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/2.png"
   },
   {
     "id": 3,
-    "name": "Mimitchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/7bDlVADQACLZJXuR/みみっち_書き出し正方形.png"
+    "name": "Welcotchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/3.png"
   },
   {
     "id": 4,
-    "name": "Memetchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/bfBUa57Abv7s6Aon/めめっち_書き出し正方形.png"
+    "name": "Lionetchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/4.png"
   },
   {
     "id": 5,
-    "name": "Shykutchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/xLtHM2xgE6JXG5VY/シャイクっち_書き出し正方形.png"
+    "name": "Mitumarutchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/5.png"
   },
   {
     "id": 6,
-    "name": "Bigsmile",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/2JsHw1p9Ke5ZawTU/ビックスマイル_書き出し正方形.png"
+    "name": "Otamatchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/6.png"
   },
   {
     "id": 7,
-    "name": "Hypertchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/LGPhNjjy67FCxPVL/ハイパーっち_書き出し正方形.png"
+    "name": "Kuriritchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/7.png"
   },
   {
     "id": 8,
-    "name": "Picochutchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/CgoIIIEPHSIiOR8d/ぴこちゅっち_書き出し正方形.png"
+    "name": "Labilatchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/8.png"
   },
   {
     "id": 9,
-    "name": "Woopatchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/F4WxefuBqQy3sq2g/うーぱっち_書き出し正方形.png"
+    "name": "Gunchitchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/9.png"
   },
   {
     "id": 10,
-    "name": "Bubbletchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/o3qT1XoSm0pQVNMH/バブルっち_書き出し正方形.png"
+    "name": "Teftetchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/10.png"
   },
   {
     "id": 11,
-    "name": "Unimarutchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/04/w2aVnL5ysfcKIIG9/ゆにまるっち_書き出し正方形.png"
+    "name": "Curltchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/11.png"
   },
   {
     "id": 12,
-    "name": "Gozarutchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/us/character/2023/06/03/DYHOzoQRJWnm3E6r/ござるっち_書き出し正方形.png"
+    "name": "Tustustchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/12.png"
   },
   {
     "id": 13,
-    "name": "Weeptchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/04/0HE2zGJokga2qh0x/ぴゅえる_書き出し正方形.png"
+    "name": "Mametchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/13.png"
   },
   {
     "id": 14,
-    "name": "Kikitchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/04/KH6GFEzAU1A2lFtr/ききっち_書き出し正方形.png"
+    "name": "Weeptchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/14.png"
   },
   {
     "id": 15,
     "name": "Simagurutchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/04/P5B3JOSItfhFoaZV/しまぐる_書き出し正方形.png"
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/15.png"
   },
   {
     "id": 16,
-    "name": "Sebiretchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/04/L6dm1V41cumHkqrh/せびれっち_書き出し正方形.png"
+    "name": "Kuchipatchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/16.png"
   },
   {
     "id": 17,
-    "name": "Neliatchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/04/f9DbkrXpku85kzN9/ねりあっち_書き出し正方形.png"
+    "name": "Shykutchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/17.png"
   },
   {
     "id": 18,
-    "name": "Momotchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/04/DT1Vol6J0E3uYxNn/ももっち_書き出し正方形.png"
+    "name": "Bigsmile",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/18.png"
   },
   {
     "id": 19,
-    "name": "Milktchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/04/zJpwsAatzz4R0lnw/みるくっち_書き出し正方形.png"
+    "name": "Kikitchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/19.png"
   },
   {
     "id": 20,
-    "name": "Simasimatchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/08/24/yHJwByWA8HH56lPh/MicrosoftTeams-imag.png"
+    "name": "Unimarutchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/20.png"
   },
   {
     "id": 21,
-    "name": "Yattatchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2023/08/24/9p1aHOB66z5lqNws/MicrosoftTeams-image.png"
+    "name": "Gozarutchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/21.png"
   },
   {
     "id": 22,
-    "name": "Ichigotchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/Xw7lGTHhtEqKgNWN/01_いちごっち.png"
+    "name": "Hypertchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/22.png"
   },
   {
     "id": 23,
-    "name": "Ringotchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/wSDae06mBBVj4o15/02_りんごっち.png"
+    "name": "Simasimatchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/23.png"
   },
   {
     "id": 24,
-    "name": "Hotcaketchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/6NQw1qmF9iXBH35Z/03_ほっとけーきっち.png"
+    "name": "Neliatchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/24.png"
   },
   {
     "id": 25,
-    "name": "Patitchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/ObqNRHVNm6qsyW2R/04_パティっち.png"
+    "name": "Milktchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/25.png"
   },
   {
     "id": 26,
-    "name": "Cornetchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/R0SP18TYhk2Mnhwh/05_コルネっち.png"
+    "name": "Momotchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/26.png"
   },
   {
     "id": 27,
-    "name": "Tanghulutchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/5B06dmLbPgRimd30/06_タンフルっち.png"
+    "name": "Woopatchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/27.png"
   },
   {
     "id": 28,
-    "name": "Lovelitchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/NZXo7dljOvRM6SY4/07_ラブリっち.png"
+    "name": "Memetchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/28.png"
   },
   {
     "id": 29,
-    "name": "Melodytchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/18R5JTlqacvDzfVu/08_メロディっち.png"
+    "name": "Picochutchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/29.png"
   },
   {
     "id": 30,
-    "name": "Chekeratchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/bYXNlRP3Sbrb7ysi/09_チェケラっち.png"
+    "name": "Mimitchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/30.png"
   },
   {
     "id": 31,
-    "name": "Pianitchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/NhfgVpp1BdvajtMf/10_ピアニっち.png"
+    "name": "Unimarutchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/31.png"
   },
   {
     "id": 32,
-    "name": "Drumcrubtchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/6Goow9Wzg1XzZxCI/11_ドラムカニっち.png"
+    "name": "Sebiretchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/32.png"
   },
   {
     "id": 33,
-    "name": "Rhythristchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/fU2UD2mhCBdX3GM3/12_リズリスっち.png"
+    "name": "Bubbletchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/33.png"
   },
   {
     "id": 34,
-    "name": "Coffretchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/uWj29ZiAXDNWNKg8/13_コフレっち.png"
+    "name": "Yattatchi",
+    "expansion": "Base Game",
+    "imageFile": "./assets/tamas/34.png"
   },
   {
     "id": 35,
-    "name": "Moriritchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/tTkeYmNql7r6DxOx/14_もりりっち.png"
+    "name": "Hotcaketchi",
+    "expansion": "Very Berry Land",
+    "imageFile": "./assets/tamas/35.png"
   },
   {
     "id": 36,
-    "name": "Mystartchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/PeVdpJEsIpgMPuXb/15_マイスターっち.png"
+    "name": "Ichigotchi",
+    "expansion": "Very Berry Land",
+    "imageFile": "./assets/tamas/36.png"
   },
   {
     "id": 37,
-    "name": "Spacytchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/vXnEIwUqOGq6EQ6t/16_スペイシーっち.png"
+    "name": "Ringotchi",
+    "expansion": "Very Berry Land",
+    "imageFile": "./assets/tamas/37.png"
   },
   {
     "id": 38,
-    "name": "Dresstchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/eMOLE6PnjQnf9Onj/17_ドレスっち.png"
+    "name": "Patitchi",
+    "expansion": "Very Berry Land",
+    "imageFile": "./assets/tamas/38.png"
   },
   {
     "id": 39,
-    "name": "Bootsbrothers",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/04/17/b7eZzYbrbnB0BtXD/18_ブーツブラザーズ.png"
+    "name": "Cornetchi",
+    "expansion": "Very Berry Land",
+    "imageFile": "./assets/tamas/39.png"
   },
   {
     "id": 40,
-    "name": "Mame-El",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/Lw7YIgyWPXDfaKxl/19_マメエル.png"
+    "name": "Tanghulutchi",
+    "expansion": "Very Berry Land",
+    "imageFile": "./assets/tamas/40.png"
   },
   {
     "id": 41,
-    "name": "Pegasustchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/MNFan9b6rrizGUsp/20_ぺがさすぱっち.png"
+    "name": "Chekeratchi",
+    "expansion": "LoveMelo ♪ Concert",
+    "imageFile": "./assets/tamas/41.png"
   },
   {
     "id": 42,
-    "name": "Flowerdite",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/kpidD6D9VGCZSAYJ/21_フラワディーテ.png"
+    "name": "Drumcrubitchi",
+    "expansion": "LoveMelo ♪ Concert",
+    "imageFile": "./assets/tamas/42.png"
   },
   {
     "id": 43,
-    "name": "Sebirecupid",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/bC3ajoKDaT2Iunud/22_せびれキューピッド.png"
+    "name": "Lovelitchi",
+    "expansion": "LoveMelo ♪ Concert",
+    "imageFile": "./assets/tamas/43.png"
   },
   {
     "id": 44,
-    "name": "Unimarucorn",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/pm9s3YaLKLN1VmAS/23_ゆにまるこーん.png"
+    "name": "Melodytchi",
+    "expansion": "LoveMelo ♪ Concert",
+    "imageFile": "./assets/tamas/44.png"
   },
   {
     "id": 45,
-    "name": "Yumemittie",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/uL0HRlvQZ9He6laH/24_ユメミッティエ.png"
+    "name": "Pianitchi",
+    "expansion": "LoveMelo ♪ Concert",
+    "imageFile": "./assets/tamas/45.png"
   },
   {
     "id": 46,
-    "name": "Mamegon",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/ndcj51QaK8AapV1j/25_マメゴン.png"
+    "name": "Rhythristchi",
+    "expansion": "LoveMelo ♪ Concert",
+    "imageFile": "./assets/tamas/46.png"
   },
   {
     "id": 47,
-    "name": "Slimypatchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/TvuECx3B8JfPWwoi/26_すらいみ～ぱっち.png"
+    "name": "Spacytchi",
+    "expansion": "Tamamori Fashion Show ★",
+    "imageFile": "./assets/tamas/47.png"
   },
   {
     "id": 48,
-    "name": "Onimarutchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/G0dXfNhorktdiIkG/27_おにまるっち.png"
+    "name": "Mystartchi",
+    "expansion": "Tamamori Fashion Show ★",
+    "imageFile": "./assets/tamas/48.png"
   },
   {
     "id": 49,
-    "name": "Meduupa",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/CNMmPe8Ri2oNNkuD/28_メデュウーパ.png"
+    "name": "Boots Brothers",
+    "expansion": "Tamamori Fashion Show ★",
+    "imageFile": "./assets/tamas/49.png"
   },
   {
     "id": 50,
-    "name": "Gobpyon",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/zZTeTTl9qiIMQ1aL/29_ゴブぴょん.png"
+    "name": "Moriritchi",
+    "expansion": "Tamamori Fashion Show ★",
+    "imageFile": "./assets/tamas/50.png"
   },
   {
     "id": 51,
-    "name": "Giveuptchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/12/wycXb1zVaeuhvWC4/30_アキラメナッチ.png"
+    "name": "Coffretchi",
+    "expansion": "Tamamori Fashion Show ★",
+    "imageFile": "./assets/tamas/51.png"
   },
   {
     "id": 52,
-    "name": "K Mametchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/17/sjAjamNdXr29EgCb/31_キティなまめっち.png"
+    "name": "Dresstchi",
+    "expansion": "Tamamori Fashion Show ★",
+    "imageFile": "./assets/tamas/52.png"
   },
   {
     "id": 53,
-    "name": "U Memetchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/17/RghBbYxCFS320WlS/35_ウサハナなめめっち.png"
+    "name": "Mame Kitty",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/53.png"
   },
   {
     "id": 54,
-    "name": "K Melodytchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/17/FIxNQZSEzCfFU8Us/39_クロミなメロディっち.png"
+    "name": "Patchi Purin",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/54.png"
   },
   {
     "id": 55,
-    "name": "C Woopatchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/17/FEK4me3bDHEBJf7s/36_こぎみゅんなうーぱっち.png"
+    "name": "Usahana Memetchi",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/55.png"
   },
   {
     "id": 56,
-    "name": "C Moriritchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/17/sw4ZHng91EAp6G99/40_シナモンなもりりっち.png"
+    "name": "Cinnamon Moriritchi",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/56.png"
   },
   {
     "id": 57,
-    "name": "H Sebiretchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/17/8QiLf6wepDCWfqvn/37_ハンギョドンなせびれっち.png"
+    "name": "Kuromi Melodytchi",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/57.png"
   },
   {
     "id": 58,
-    "name": "P Patchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/17/CQXWyV4zs9zdsrbD/32_プリンなくちぱっち.png"
+    "name": "Hangyodon Sebiretchi",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/58.png"
   },
   {
     "id": 59,
-    "name": "P Mimitchi",
-    "imageUrl": "https://tamagotchi-official.com/tamagotchi/jp/character/2024/12/17/uICuYE1bR0VsM1aQ/33_ポチャッコなみみっち.png"
+    "name": "MyMelo Lovelitchi",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/59.png"
+  },
+  {
+    "id": 60,
+    "name": "Pochacco Mimitchi",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/60.png"
+  },
+  {
+    "id": 61,
+    "name": "Cogimyun Woopatchi",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/61.png"
+  },
+  {
+    "id": 62,
+    "name": "Little Unimarutchi",
+    "expansion": "Sanrio Characters",
+    "imageFile": "./assets/tamas/62.png"
+  },
+  {
+    "id": 63,
+    "name": "Mame-El",
+    "expansion": "Angel Festival",
+    "imageFile": "./assets/tamas/63.png"
+  },
+  {
+    "id": 64,
+    "name": "Pegasustchi",
+    "expansion": "Angel Festival",
+    "imageFile": "./assets/tamas/64.png"
+  },
+  {
+    "id": 65,
+    "name": "Flowerdite",
+    "expansion": "Angel Festival",
+    "imageFile": "./assets/tamas/65.png"
+  },
+  {
+    "id": 66,
+    "name": "Sebirecupid",
+    "expansion": "Angel Festival",
+    "imageFile": "./assets/tamas/66.png"
+  },
+  {
+    "id": 67,
+    "name": "Yumemittie",
+    "expansion": "Angel Festival",
+    "imageFile": "./assets/tamas/67.png"
+  },
+  {
+    "id": 68,
+    "name": "Unimarucorn",
+    "expansion": "Angel Festival",
+    "imageFile": "./assets/tamas/68.png"
+  },
+  {
+    "id": 69,
+    "name": "Mamegon",
+    "expansion": "Monster Carnival",
+    "imageFile": "./assets/tamas/69.png"
+  },
+  {
+    "id": 70,
+    "name": "Slimypatchi",
+    "expansion": "Monster Carnival",
+    "imageFile": "./assets/tamas/70.png"
+  },
+  {
+    "id": 71,
+    "name": "Meduupa",
+    "expansion": "Monster Carnival",
+    "imageFile": "./assets/tamas/71.png"
+  },
+  {
+    "id": 72,
+    "name": "Gobpyon",
+    "expansion": "Monster Carnival",
+    "imageFile": "./assets/tamas/72.png"
+  },
+  {
+    "id": 73,
+    "name": "Giveuptchi",
+    "expansion": "Monster Carnival",
+    "imageFile": "./assets/tamas/73.png"
+  },
+  {
+    "id": 74,
+    "name": "Onimarutchi",
+    "expansion": "Monster Carnival",
+    "imageFile": "./assets/tamas/74.png"
+  },
+  {
+    "id": 75,
+    "name": "Mamecchio",
+    "expansion": "Fairy Tale Library",
+    "imageFile": "./assets/tamas/75.png"
+  },
+  {
+    "id": 76,
+    "name": "Piggypatchis",
+    "expansion": "Fairy Tale Library",
+    "imageFile": "./assets/tamas/76.png"
+  },
+  {
+    "id": 77,
+    "name": "Kikigoku",
+    "expansion": "Fairy Tale Library",
+    "imageFile": "./assets/tamas/77.png"
+  },
+  {
+    "id": 78,
+    "name": "Pyonderella",
+    "expansion": "Fairy Tale Library",
+    "imageFile": "./assets/tamas/78.png"
+  },
+  {
+    "id": 79,
+    "name": "Milkyukihime",
+    "expansion": "Fairy Tale Library",
+    "imageFile": "./assets/tamas/79.png"
+  },
+  {
+    "id": 80,
+    "name": "Neliakaguya",
+    "expansion": "Fairy Tale Library",
+    "imageFile": "./assets/tamas/80.png"
+  },
+  {
+    "id": 81,
+    "name": "Peanutskun",
+    "expansion": "PokoPea Land",
+    "imageFile": "./assets/tamas/81.png"
+  },
+  {
+    "id": 82,
+    "name": "Chancho",
+    "expansion": "PokoPea Land",
+    "imageFile": "./assets/tamas/82.png"
+  },
+  {
+    "id": 83,
+    "name": "Peanutsoyaji",
+    "expansion": "PokoPea Land",
+    "imageFile": "./assets/tamas/83.png"
+  },
+  {
+    "id": 84,
+    "name": "Bnn-hairtchi",
+    "expansion": "PokoPea Land",
+    "imageFile": "./assets/tamas/84.png"
+  },
+  {
+    "id": 85,
+    "name": "Tanuki Ninja",
+    "expansion": "PokoPea Land",
+    "imageFile": "./assets/tamas/85.png"
+  },
+  {
+    "id": 86,
+    "name": "Ponpoko",
+    "expansion": "PokoPea Land",
+    "imageFile": "./assets/tamas/86.png"
+  },
+  {
+    "id": 87,
+    "name": "Gachikoi-P",
+    "expansion": "PokoPea Land",
+    "imageFile": "./assets/tamas/87.png"
+  },
+  {
+    "id": 88,
+    "name": "Kuromametchi",
+    "expansion": "DoriTama School",
+    "imageFile": "./assets/tamas/88.png"
+  },
+  {
+    "id": 89,
+    "name": "Octpasketchi",
+    "expansion": "DoriTama School",
+    "imageFile": "./assets/tamas/89.png"
+  },
+  {
+    "id": 90,
+    "name": "Tapepentchi",
+    "expansion": "DoriTama School",
+    "imageFile": "./assets/tamas/90.png"
+  },
+  {
+    "id": 91,
+    "name": "Yumemitchi",
+    "expansion": "DoriTama School",
+    "imageFile": "./assets/tamas/91.png"
+  },
+  {
+    "id": 92,
+    "name": "Kiraritchi",
+    "expansion": "DoriTama School",
+    "imageFile": "./assets/tamas/92.png"
+  },
+  {
+    "id": 93,
+    "name": "Miraitchi",
+    "expansion": "DoriTama School",
+    "imageFile": "./assets/tamas/93.png"
+  },
+  {
+    "id": 94,
+    "name": "Clulutchi",
+    "expansion": "DoriTama School",
+    "imageFile": "./assets/tamas/94.png"
+  },
+  {
+    "id": 95,
+    "name": "Opanchu Usagi",
+    "expansion": "KAWAISOUNI! Land",
+    "imageFile": "./assets/tamas/95.png"
+  },
+  {
+    "id": 96,
+    "name": "Npocham",
+    "expansion": "KAWAISOUNI! Land",
+    "imageFile": "./assets/tamas/96.png"
+  },
+  {
+    "id": 97,
+    "name": "Kimimaro",
+    "expansion": "KAWAISOUNI! Land",
+    "imageFile": "./assets/tamas/97.png"
+  },
+  {
+    "id": 98,
+    "name": "Kawaisouni Mametchi",
+    "expansion": "KAWAISOUNI! Land",
+    "imageFile": "./assets/tamas/98.png"
+  },
+  {
+    "id": 99,
+    "name": "Kawaisouni Kuchipatchi",
+    "expansion": "KAWAISOUNI! Land",
+    "imageFile": "./assets/tamas/99.png"
+  },
+  {
+    "id": 100,
+    "name": "Kawaisouni Mimitchi",
+    "expansion": "KAWAISOUNI! Land",
+    "imageFile": "./assets/tamas/100.png"
   }
 ]

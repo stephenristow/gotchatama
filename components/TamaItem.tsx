@@ -6,8 +6,8 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tama } from '../app/hooks/useTamaStorage';
 
 const { width } = Dimensions.get('window');
-const CARD_MARGIN = 4;
-const CARD_WIDTH = (width - CARD_MARGIN * 2) / 2;
+const CARD_MARGIN = 8;
+const CARD_WIDTH = (width - CARD_MARGIN * 3) / 2;
 
 interface Props {
     tama: Tama;
@@ -16,18 +16,15 @@ interface Props {
 }
 
 export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
-    const uri =
-    tama.imageUrl.startsWith('http')
-      ? tama.imageUrl
-      : `https://tamagotchi-official.com${tama.imageUrl}`;
-    
-    const opacityStyle = { opacity: tama.acquired ? 1 : 0.4 };
+  
+
+  const opacityStyle = { opacity: tama.acquired ? 1 : 0.4 };
 
     return (
       <View style={styles.wrapper}>
         <View style={styles.card}>
           <View style={[styles.imageContainer, tama.acquired ? null : styles.disabled]}>
-            <Image source={{ uri }} style={styles.image} />
+            <Image source={ tama.image } style={styles.image} />
           </View>
           
           <View style={styles.bottomRow}>
@@ -51,13 +48,9 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
 
 const styles = StyleSheet.create({
     wrapper: {
-        width: CARD_WIDTH,
+        flexBasis: CARD_WIDTH,
+        flexGrow: 0,
         margin: CARD_MARGIN,
-    },
-    wrapper: {
-      flex: 1,
-      aspectRatio: 0.85,
-      margin: 8,
     },
     card: {
         flex: 1,
@@ -77,15 +70,15 @@ const styles = StyleSheet.create({
       opacity: 0.4,
     },
     imageContainer: {
-      flex: 1,
+      width: '100%',
+      aspectRatio: 1,
       justifyContent: 'center',
       alignItems: 'center',
     },
     image: {
         width: '80%',
         height: '80%',
-        aspectRatio: 1,
-        resizeMode: 'cover',
+        resizeMode: 'contain',
     },
     bottomRow: {
       flexDirection: 'row',

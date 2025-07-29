@@ -6,11 +6,7 @@ const KEY = '@tama_filters';
 const DEFAULTS: Filters = {
   showAcquired: true,
   showUnacquired: true,
-  onlyBaseGame: false,
-  onlyExpansions: false,
-  expansions: ['Very Berry Land', 'LoveMelo Concert', 'Tamamori Fashion Show', 
-    'Sanrio Characters', 'Angel Festival', 'Monster Carnival', 'Fairy Tale Library', 
-    'PokoPea Land', 'DoriTama School', 'KAWAISOUN! Land'],
+  expansions: [],
 };
 
 export function useFilterStorage() {
