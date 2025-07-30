@@ -6,6 +6,8 @@ import AppLoading from 'expo-app-loading';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
 import { Pressable } from 'react-native';
+import { Feather } from '@expo/vector-icons';
+import { useShareTamas } from '../hooks/useShareTamas.ts';
 
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
@@ -36,6 +38,7 @@ export default function TabLayout() {
 
   const colorScheme = useColorScheme();
 
+  const { shareText } = useShareTamas();
   return (
     <Tabs
       screenOptions={{
@@ -71,18 +74,13 @@ export default function TabLayout() {
           title: 'Uni',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
+            <Pressable
+              onPress={shareText}
+              style={{ padding: 8, marginRight: 12 }}
+              hitSlop={8}
+            >
+              <Feather name="share-2" size={24} />
+            </Pressable>
           ),
         }}
       />
