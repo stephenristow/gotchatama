@@ -8,6 +8,7 @@ import { Link, Tabs } from 'expo-router';
 import { Pressable } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useShareTamas } from '../hooks/useShareTamas.ts';
+import { TamaProvider } from '../contexts/TamaContext.tsx';
 
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
@@ -29,13 +30,15 @@ export default function TabLayout() {
   if (!fontsLoaded) {
     return <AppLoading />;
   }
+  
+  return (
+    <TamaProvider>
+      <TabLayoutWithContext/>
+    </TamaProvider>
+  )
+}
 
-  // RNText.defaultProps = RNText.defaultProps || {};
-  // RNText.defaultProps.style = {
-  //   ...(RNText.defaultProps.style || {}),
-  //   style: [{ fontFamily: 'ArialRounded' }, ...(RNText.defaultProps.style ?? [])], 
-  // };
-
+function TabLayoutWithContext() {
   const colorScheme = useColorScheme();
 
   const { shareText } = useShareTamas();
