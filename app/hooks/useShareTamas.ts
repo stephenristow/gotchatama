@@ -13,6 +13,7 @@ export function useShareTamas() {
   const { tamas } = context;
 
   const shareText = async () => {
+    console.log('[shareText] Current tamas:', tamas);
     const gotchaNames = tamas
       .filter(t => t.acquired)
       .map(t => t.name)

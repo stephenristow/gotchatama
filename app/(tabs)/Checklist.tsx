@@ -51,6 +51,8 @@ export default function ChecklistScreen() {
     Array.from(new Set(tamas.map(t => t.expansion)))
   )
   const visibleTamas = tamas.filter(t => 
+    t.id > 12
+    ).filter(t => 
     t.name.toLowerCase().includes(searchQuery.trim().toLowerCase())
     ).filter(t => {
       if (!filters.showAcquired && t.acquired) return false;

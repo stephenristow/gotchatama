@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Switch, StyleSheet, Image, Dimensions, Pressable } from 'react-native';
 import { Text } from '@/components/Themed';
 import Checkbox from 'expo-checkbox';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tama } from '../app/hooks/useTamaStorage';
+import { normalize } from '../utils/normalize.ts';
 
 const { width } = Dimensions.get('window');
 const CARD_MARGIN = 8;
@@ -16,7 +17,22 @@ interface Props {
 }
 
 export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
+  const [ cardWidth, setCardWidth ] = useState<number | null>(null);
   
+  const handleLayout = (event: any) => {
+    setCardWidth(event.nativeEvent.layout.width);
+  };
+
+  const longestWordLength = Math.max( ...tama.name.split(/[\s\-]/).map(w => w.length));
+  const CHAR_WIDTH_ESTIMATE = 8;
+  const BASE_FONT_SIZE = 12;
+
+  let fontSize = BASE_FONT_SIZE;
+  if (cardWidth) {
+    const maxCharsPerLine = cardWidth / CHAR_WIDTH_ESTIMATE;
+    const fontScale = Math.min(1, maxCharsPerLine / longestWordLength);
+    fontSize = normalize(BASE_FONT_SIZE * fontScale, cardWidth);
+  }
 
   const opacityStyle = { opacity: tama.acquired ? 1 : 0.4 };
 
@@ -34,7 +50,7 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
               style={styles.checkbox}
             />
           
-            <Text style={styles.name} numberOfLines={1}>
+            <Text style={[styles.name, {fontSize}]} numberOfLines={1}>
               {tama.name}
             </Text>
             <Pressable onPress={onInfoPress} hitSlop={8}>
@@ -48,9 +64,8 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
 
 const styles = StyleSheet.create({
     wrapper: {
-        flexBasis: CARD_WIDTH,
-        flexGrow: 0,
-        margin: CARD_MARGIN,
+      flex: 1,
+      margin: CARD_MARGIN,
     },
     card: {
         flex: 1,
@@ -92,7 +107,6 @@ const styles = StyleSheet.create({
     name: { 
         flex: 1,
         textAlign: 'center',
-        fontSize: 16,
         fontColor: '#a0a0a0',
         marginRight: 8, 
     },

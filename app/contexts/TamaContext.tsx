@@ -1,10 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
-
-type Tama = {
-  id: number;
-  name: string;
-  acquired: boolean;
-}
+import { useTamaStorage } from '../hooks/useTamaStorage.ts';
+import { Tama } from '../types/tama.ts';
 
 type TamaContextType = {
   tamas: Tama[];
@@ -15,18 +11,17 @@ type TamaContextType = {
 export const TamaContext = createContext<TamaContextType | undefined>(undefined);
 
 export const TamaProvider = ({ children }: { children: ReactNode }) => {
-  const [tamas, setTamas] = useState<Tama[]>([]);
+  const { tamas, save } = useTamaStorage();
 
   const toggleTama = (id: number) => {
-    setTamas(prev =>
-      prev.map(t => 
+    const updated = tamas.map(t => 
         t.id === id ? { ...t, acquired: !t.acquired } : t
-        )
     );
   };
 
   const getShareableText = () => {
-    return tamas.filter(t => t.acquired)
+    return tamas
+      .filter(t => t.acquired)
       .map(t => t.name)
       .join(', ');
   };
