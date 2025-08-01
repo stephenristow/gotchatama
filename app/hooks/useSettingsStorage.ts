@@ -12,11 +12,13 @@ const DEFAULTS: Settings = {
 
 export function useSettingsStorage() {
   const [settings, setSettings] = useState<Settings>(DEFAULTS);
+  const [loaded, setLoaded ] = useState(false);
 
   useEffect(() => {
     (async () => {
       const json = await AsyncStorage.getItem(KEY);
       if (json) setSettings(JSON.parse(json));
+      setLoaded(true);
     })();
   }, []);
 
@@ -25,5 +27,5 @@ export function useSettingsStorage() {
     await AsyncStorage.setItem(KEY, JSON.stringify(newSettings));
   };
 
-  return { settings, save };
+  return { settings, save, loaded };
 }

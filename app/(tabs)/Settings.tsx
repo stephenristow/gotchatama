@@ -1,14 +1,15 @@
 import { StyleSheet, View, Button, TextInput, Platform, } from 'react-native';
 import { Text } from '@/components/Themed';
 import { Picker } from '@react-native-picker/picker';
-import { useSettingsStorage } from '../hooks/useSettingsStorage.ts';
+import { useSettings } from '../contexts/SettingsContext.tsx';
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Theme, ViewMode } from '../types/settings.ts';
 import CustomSwitch from '@/components/CustomSwitch';
 
 export default function SettingsScreen() {
-  const { settings, save } = useSettingsStorage();
+  const { settings, save } = useSettings();
 
+  console.log('[SettingsScreen] Current theme settings:', settings.theme);
   const update = (partial: Parial<typeof settings>) =>
     save({ ...settings, ...partial });
 

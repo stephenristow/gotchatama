@@ -9,10 +9,13 @@ import { Pressable } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useShareTamas } from '../hooks/useShareTamas.ts';
 import { TamaProvider } from '../contexts/TamaContext.tsx';
+import { SettingsProvider } from '../contexts/SettingsContext.tsx';
 
-import Colors from '@/constants/Colors';
-import { useColorScheme } from '@/components/useColorScheme';
+import Colors from '../../constants/Colors';
+import { useColorScheme } from '../../components/useColorScheme';
+import { useSettings } from '../contexts/SettingsContext.tsx';
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
+import { DefaultTheme, DarkTheme, ThemeProvider } from '@react-navigation/native';
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
@@ -27,19 +30,47 @@ export default function TabLayout() {
     ArialRounded: require('../../assets/fonts/arial-rounded-mt-regular.ttf'),
     TamaConnect: require('../../assets/fonts/tamaconnecttype.ttf')
   });
-  if (!fontsLoaded) {
+ 
+  if (!fontsLoaded ) {
     return <AppLoading />;
   }
-  
+
   return (
-    <TamaProvider>
-      <TabLayoutWithContext/>
-    </TamaProvider>
-  )
+    <SettingsProvider>
+      <ThemedApp />
+    </SettingsProvider>
+  );
 }
 
-function TabLayoutWithContext() {
-  const colorScheme = useColorScheme();
+function ThemedApp() {
+  const { settings, loaded } = useSettings();
+  const colorScheme = settings.theme;
+  console.log('[Layout] Resolved color scheme:', colorScheme);
+
+  if (!loaded) { 
+    return <AppLoading/>;
+  }
+  const customTheme = {
+    ...((colorScheme === 'dark') ? DarkTheme : DefaultTheme),
+    colors: {
+      ...(colorScheme === 'dark' ? DarkTheme.colors : DefaultTheme.colors),
+      background: Colors[colorScheme].background,
+      text: Colors[colorScheme].text,
+      border: Colors[colorScheme].border,
+      primary: Colors[colorScheme].tint,
+      card: Colors[colorScheme].background,
+    },
+  };
+  return (
+    <ThemeProvider value={customTheme}>
+      <TamaProvider>
+        <TabLayoutWithContext colorScheme={colorScheme}/>
+      </TamaProvider>
+    </ThemeProvider>
+  ); 
+}
+
+function TabLayoutWithContext({ colorScheme }: { colorScheme: 'light' | 'dark' }) {
 
   const { shareText } = useShareTamas();
   return (
@@ -50,10 +81,10 @@ function TabLayoutWithContext() {
 
         headerStyle: {
           backgroundColor: Colors[colorScheme].background,
-          
+
           borderBottomWidth: 1,
           borderBottomColor: Colors[colorScheme].border,
-          
+
           shadowColor: '#000',
           shadowOffset: { width: 0, height: 2 },
           shadowOpacity: 0.1,
@@ -79,10 +110,17 @@ function TabLayoutWithContext() {
           headerRight: () => (
             <Pressable
               onPress={shareText}
-              style={{ padding: 8, marginRight: 12 }}
+              style={{ 
+                padding: 8, 
+                marginRight: 12, 
+                backgroundColor: Colors[colorScheme].card, 
+                borderColor: Colors[colorScheme].border, 
+                borderWidth: 1,
+                borderRadius: 8,
+              }}
               hitSlop={8}
             >
-              <Feather name="share-2" size={24} />
+              <Feather name="share-2" size={24} color={Colors[colorScheme].text} />
             </Pressable>
           ),
         }}

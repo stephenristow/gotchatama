@@ -6,6 +6,9 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tama } from '../app/hooks/useTamaStorage';
 import { normalize } from '../utils/normalize.ts';
 
+import { useColorScheme } from '../components/useColorScheme.ts';
+import Colors from '../constants/Colors.ts';
+
 const { width } = Dimensions.get('window');
 const CARD_MARGIN = 8;
 const CARD_WIDTH = (width - CARD_MARGIN * 3) / 2;
@@ -25,6 +28,10 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
     setCardWidth(width);
   };
 
+  const colorScheme = useColorScheme();
+  const themeColors = Colors[colorScheme] ?? Colors.light;
+  console.log('[Debug] themeColors:', themeColors);
+
   const longestWordLength = Math.max( ...tama.name.split(/[\s\-]/).map(w => w.length));
   const CHAR_WIDTH_ESTIMATE = 8;
   const BASE_FONT_SIZE = 12;
@@ -41,7 +48,15 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
 
     return (
       <View style={styles.wrapper} onLayout={handleLayout}>
-        <View style={styles.card}>
+        <View 
+          style={[
+            styles.card,
+            {
+              backgroundColor: themeColors.card,
+              borderColor: themeColors.border,
+            },
+          ]}
+        >
           <View style={[styles.imageContainer, tama.acquired ? null : styles.disabled]}>
             <Image source={ tama.image } style={styles.image} />
           </View>
@@ -53,7 +68,7 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
               style={styles.checkbox}
             />
           
-            <Text style={[styles.name, {fontSize}]} numberOfLines={2}>
+            <Text style={[styles.name, { color: themeColors.text, fontSize}]} numberOfLines={2}>
               {softHyphenatedName}
             </Text>
             <Pressable onPress={onInfoPress} hitSlop={8}>
@@ -72,9 +87,7 @@ const styles = StyleSheet.create({
     },
     card: {
         flex: 1,
-        backgroundColor: '#fff',
         borderRadius: 32,
-        borderColor: '#a0a0a0',
         borderWidth: 2, 
         overflow: 'hidden',
 
