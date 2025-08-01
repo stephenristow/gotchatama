@@ -19,13 +19,16 @@ interface Props {
 export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
   const [ cardWidth, setCardWidth ] = useState<number | null>(null);
   
-  const handleLayout = (event: any) => {
-    setCardWidth(event.nativeEvent.layout.width);
+  const handleLayout = (event) => {
+    const { width } = event.nativeEvent.layout;
+    console.log('[TamaItem] Card width:', width);
+    setCardWidth(width);
   };
 
   const longestWordLength = Math.max( ...tama.name.split(/[\s\-]/).map(w => w.length));
   const CHAR_WIDTH_ESTIMATE = 8;
   const BASE_FONT_SIZE = 12;
+  const softHyphenatedName = tama.name.replace(/-/g, '\u200B');
 
   let fontSize = BASE_FONT_SIZE;
   if (cardWidth) {
@@ -37,7 +40,7 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
   const opacityStyle = { opacity: tama.acquired ? 1 : 0.4 };
 
     return (
-      <View style={styles.wrapper}>
+      <View style={styles.wrapper} onLayout={handleLayout}>
         <View style={styles.card}>
           <View style={[styles.imageContainer, tama.acquired ? null : styles.disabled]}>
             <Image source={ tama.image } style={styles.image} />
@@ -50,8 +53,8 @@ export default function TamaItem({ tama, onToggle, onInfoPress }: Props) {
               style={styles.checkbox}
             />
           
-            <Text style={[styles.name, {fontSize}]} numberOfLines={1}>
-              {tama.name}
+            <Text style={[styles.name, {fontSize}]} numberOfLines={2}>
+              {softHyphenatedName}
             </Text>
             <Pressable onPress={onInfoPress} hitSlop={8}>
               <FontAwesome name="info-circle" size={20} colors="#555"/>
